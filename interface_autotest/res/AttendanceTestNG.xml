@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AttendanceTest"  allow-return-values="true">        
+         <test name="AttendanceTest"> 
+            <classes>              
+              <class name="com.it.test.AttendanceTest" >
+              <methods>  
+                  <include name="attendanceTest"></include>              
+               </methods>                          
+              </class>
+      
+           </classes>  
+          </test> 
+</suite> <!-- Suite -->

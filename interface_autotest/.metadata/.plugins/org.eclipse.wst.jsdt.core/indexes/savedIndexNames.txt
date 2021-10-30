@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\interface_autotest\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1990575506.index
+2124034535.index
+858238573.index
+1269627254.index
+1429359392.index
+3930963066.index
+825819757.index

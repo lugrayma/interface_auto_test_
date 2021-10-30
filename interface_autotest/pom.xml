@@ -1,0 +1,130 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.my.project</groupId>
+  <artifactId>interface_autotest</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>interface_autotest</name>
+  <url>http://maven.apache.org</url> 
+  <!-- maven 参数配置，这里引用不同的testng.xml -->
+  <properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <repositories>
+     <repository>
+         <id>ali</id>
+         <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+         <snapshots><enabled>true</enabled></snapshots>
+     </repository>
+  </repositories>
+  <dependencies>
+  <!-- 依赖log4j -->
+  <dependency>  
+    <groupId>log4j</groupId>  
+    <artifactId>log4j</artifactId>  
+    <version>1.2.16</version>  
+  </dependency>
+  <!-- 依赖testNg -->
+  <dependency>
+     <groupId>org.testng</groupId>
+     <artifactId>testng</artifactId>
+     <version>6.9.9</version>
+     <scope>test</scope>
+  </dependency>
+  <!--json-lib-->    
+  <dependency>    
+     <groupId>net.sf.json-lib</groupId>    
+     <artifactId>json-lib</artifactId>    
+     <version>2.4</version>    
+     <classifier>jdk15</classifier>    
+  </dependency>  
+  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+  <dependency>
+     <groupId>org.apache.poi</groupId>
+     <artifactId>poi-ooxml</artifactId>
+     <version>3.9</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+  <dependency> 
+  <groupId>org.apache.httpcomponents</groupId> 
+  <artifactId>httpcore</artifactId> 
+  <version>4.4.5</version> 
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+  <dependency>
+     <groupId>org.apache.httpcomponents</groupId>
+     <artifactId>httpclient</artifactId>
+     <version>4.5.3</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore-nio -->
+  <dependency>
+     <groupId>org.apache.httpcomponents</groupId>
+     <artifactId>httpcore-nio</artifactId>
+     <version>4.4.4</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpasyncclient -->
+  <dependency>
+     <groupId>org.apache.httpcomponents</groupId>
+     <artifactId>httpasyncclient</artifactId>
+     <version>4.0.1</version>
+  </dependency>
+  <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
+  <dependency>
+     <groupId>commons-httpclient</groupId>
+     <artifactId>commons-httpclient</artifactId>
+     <version>3.1</version>
+  </dependency>
+  <!-- 依赖reportNg 关联testNg -->
+  <dependency>
+     <groupId>org.uncommons</groupId>
+     <artifactId>reportng</artifactId>
+     <version>1.1.4</version>
+     <scope>test</scope>
+     <exclusions>
+        <exclusion>
+           <groupId>org.testng</groupId>
+           <artifactId>testng</artifactId>
+        </exclusion>
+     </exclusions>
+  </dependency>
+  <!-- 依赖Guice -->
+  <dependency>
+     <groupId>com.google.inject</groupId>
+     <artifactId>guice</artifactId>
+     <version>3.0</version>
+     <scope>test</scope>
+  </dependency> 
+  </dependencies>
+  
+  <build>
+     <plugins>
+     <!-- 添加插件 关联testNg.xml -->
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+        <properties>
+           <property>
+              <name>usedefaultlisteners</name>
+              <value>false</value>
+           </property>
+           <property>
+              <name>listener</name>
+              <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+           </property>
+           
+        </properties>
+        <suiteXmlFiles> 
+           <file>res/AttendanceTestNG.xml</file>
+           <suiteXmlFile>res/ImTestNG.xml</suiteXmlFile>                        
+           <suiteXmlFile>res/WeiboTestNG.xml</suiteXmlFile> 
+        </suiteXmlFiles>
+        <workingDirectory>target/</workingDirectory>
+        </configuration>
+     </plugin>
+     </plugins>
+   </build>
+    
+</project>

@@ -1,0 +1,18 @@
+//建立对象池，创建要执行关键方法的对象：
+
+package com.it.config;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+
+public  class RegisterCenter {
+
+    public static Map<String, Object> OBJ_POOLS = new HashMap<String, Object>();
+    static{
+        OBJ_POOLS.put(ActionKeyWords.class.getName(), new ActionKeyWords());
+        
+    }
+} 
+
