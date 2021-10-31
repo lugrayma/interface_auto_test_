@@ -12,14 +12,15 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 import org.apache.log4j.Logger;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
+
 import com.it.config.Contants;
 import com.it.config.KeywordReflect;
 import com.it.config.RegisterCenter;
-import com.it.excecutor.Excecutor;
 import com.it.util.ExcelUtils;
 import com.it.util.HttpHelperAsync.Response;
+
 import net.sf.json.JSONObject;
 
 
@@ -50,12 +51,12 @@ public class Excecutor {
 	    excel.setSheetName(sheetName);
 	    
 	    
-	    //获取sheet
+	    //获取sheet中行的1，2，3，4，5，6，7，8，9列的数据，如果希望扩展其他字段，可在此处添加
 	    //XSSFSheet sheet = excel.createExcelSheet(sheetName);	 
 	    
 	    for(int rowNum=1;rowNum<=excel.getSheetMaxRow();rowNum++){
-	    	    	    	    
-		        module = excel.readExcelCell(rowNum, 0);
+		       
+	    		module = excel.readExcelCell(rowNum, 0);
 		        caseNumber = excel.readExcelCell(rowNum, 1);
 		        caseDescribe = excel.readExcelCell(rowNum, 2);
 		        requestUrl = excel.readExcelCell(rowNum, 3);
@@ -66,7 +67,6 @@ public class Excecutor {
 				associationParameter = excel.readExcelCell(rowNum, 8);
 				isAtuo = excel.readExcelCell(rowNum, 9);							
 				logger.info("开始执行"+module+" "+caseNumber+" 自动化测试用例");
-				
 				Excecutor.login_action();	    	    
 	    }
     }
@@ -171,7 +171,7 @@ public class Excecutor {
            indexloc=result.indexOf("[");
 
            indexkey=result.indexOf(key);
-           //System.out.println(indexloc+"---"+indexkey);
+//           System.out.println(indexloc+"---"+indexkey);
            //判断Data域的内容
            
            if (index==0)
@@ -179,7 +179,7 @@ public class Excecutor {
            {
 
                    JSONObject jsonObj = JSONObject.fromObject(result);
-                   //System.out.println(jsonObj.getString(key));
+//                   System.out.println(jsonObj.getString(key));
                    return jsonObj.getString(key);
 
            }
@@ -188,7 +188,7 @@ public class Excecutor {
 
            {
                   newstr=getNPro(result,index);                  
-                  //System.out.println(newstr);
+//                  System.out.println(newstr);
                   return getJsonValue(newstr,0,key);
 
            }

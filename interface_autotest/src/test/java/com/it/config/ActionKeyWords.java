@@ -26,6 +26,7 @@ public static Response jsonPost(String requestUrl,String requestParameter,String
 	headers = HeaderUtils.setHeaders(headers,requestHeader);
 	JSONObject parameters = null;
 	parameters = JSONObject.fromObject(requestParameter);
+	//requestUrl请求地址, headers请求头, parameters请求参数, timeoutMillis请求时间:实现卸载TimeCalcUtil类里面。
 	return HttpHelperAsync.postJSON(requestUrl, headers, parameters, timeoutMillis);
 }
 
@@ -43,5 +44,4 @@ public static Response post(String requestUrl,String requestParameter,String req
 	headers = HeaderUtils.setHeaders(headers,requestHeader);
 	return HttpHelperAsync.post(requestUrl, headers, requestParameter, timeoutMillis);
 }
-
 }

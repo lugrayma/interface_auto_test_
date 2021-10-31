@@ -6,13 +6,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
+/**
+ * 阿三大苏打
+ * @author Administrator
+ *
+ */
 public  class RegisterCenter {
 
     public static Map<String, Object> OBJ_POOLS = new HashMap<String, Object>();
     static{
         OBJ_POOLS.put(ActionKeyWords.class.getName(), new ActionKeyWords());
-        
     }
 } 
-

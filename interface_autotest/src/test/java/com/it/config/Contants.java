@@ -1,5 +1,9 @@
 package com.it.config;
-
+/**
+ * 
+ * @author Lugrayma
+ * @version 1.0
+ */
 public class Contants {
 
 	public static String path="/TestCase.xlsx";

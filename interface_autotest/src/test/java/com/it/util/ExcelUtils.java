@@ -24,7 +24,7 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 * 只支持读取 .xlsx 所有方法读取数据时, 未对 Excel 格式类型进行判断处理 如 Excel 中有特殊数据类型, 需在 Excel
 * 中标注为文本类型, 程序才能正常处理
 * 
-* @author zhengrong_yi
+* @author longwei_li
 * @version 1.0
 */
 public class ExcelUtils {
