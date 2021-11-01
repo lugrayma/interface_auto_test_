@@ -7,7 +7,7 @@ import com.it.excecutor.Excecutor;
 
 
 public class Bicycling {
-	public static void attendance() {
+	public static void bicycling() {
 		
 		Excecutor.excecutor(Contants.path,Contants.excelSheet);
    }

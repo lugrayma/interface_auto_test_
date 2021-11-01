@@ -11,12 +11,12 @@ import com.it.service.Bicycling;
  * @version 1.0
  *
  */
-public class AttendanceTest {
+public class BicyclingTest {
 	 
 	  @Test
-	  public void attendanceTest() throws Exception{
+	  public void bicyclingTest() throws Exception{
 		  
-		  Bicycling.attendance(); 
+		  Bicycling.bicycling(); 
 		  
 	  }
 //	  
