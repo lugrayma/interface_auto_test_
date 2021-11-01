@@ -2,7 +2,7 @@ package com.it.test;
 
 import org.testng.annotations.Test;
 
-import com.it.service.Attendance;
+import com.it.service.Bicycling;
 
 	
 /**
@@ -16,7 +16,7 @@ public class AttendanceTest {
 	  @Test
 	  public void attendanceTest() throws Exception{
 		  
-		  Attendance.attendance(); 
+		  Bicycling.attendance(); 
 		  
 	  }
 //	  
