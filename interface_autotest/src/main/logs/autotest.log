@@ -1,0 +1,168 @@
+开始执行骑行路线规划API autoit001 自动化测试用例
+开始get请求...
+头信息参数为空，无需设置头信息
+Request: 
+Get https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692
+Get Params: origin=116.269775,39.842980&destination=116.397477,39.908692&key=8030fe79bb330c8a627ddd1e513526a2
+Content-Type: application/x-www-form-urlencoded
+completed successful!
+Response:
+HTTP/1.1 200 OK
+Server: Tengine
+Date: Tue, 02 Nov 2021 04:39:51 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+gsid: 033015141065163582799187600012550616320
+Vary: Accept-Encoding
+Acc-Bill: 
+Content-Encoding: gzip
+gsid: 033015141065163582799187600012550616320
+sc: 0.013
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,key,x-biz,x-info,platinfo,encr,enginever,gzipped,poiid
+url https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692 runs 0.862s...
+{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+发送请求完成！结果为：{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+请求结果中包含检查点["status":"1","info":"OK","infocode":"10000"]，autoit001用例验证通过
+开始执行骑行路线规划API autoit002 自动化测试用例
+开始get请求...
+头信息参数为空，无需设置头信息
+Request: 
+Get https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692
+Get Params: origin=116.269775,39.842980&destination=116.397477,39.908692&key=8030fe79bb330c8a627ddd1e513526a2
+Content-Type: application/x-www-form-urlencoded
+completed successful!
+Response:
+HTTP/1.1 200 OK
+Server: Tengine
+Date: Tue, 02 Nov 2021 04:39:53 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+gsid: 033015140056163582799358700012490158818
+Vary: Accept-Encoding
+Acc-Bill: 
+Content-Encoding: gzip
+gsid: 033015140056163582799358700012490158818
+sc: 0.013
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,key,x-biz,x-info,platinfo,encr,enginever,gzipped,poiid
+url https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692 runs 0.291s...
+{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+发送请求完成！结果为：{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+请求结果中包含检查点["status":"1","info":"OK","infocode":"10000"]，autoit002用例验证通过
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行骑行路线规划API autoit001 自动化测试用例
+开始get请求...
+头信息参数为空，无需设置头信息
+Request: 
+Get https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692
+Get Params: origin=116.269775,39.842980&destination=116.397477,39.908692&key=8030fe79bb330c8a627ddd1e513526a2
+Content-Type: application/x-www-form-urlencoded
+completed successful!
+Response:
+HTTP/1.1 200 OK
+Server: Tengine
+Date: Tue, 02 Nov 2021 04:40:37 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+gsid: 011018245128163582803757700012540095629
+Vary: Accept-Encoding
+Acc-Bill: 
+Content-Encoding: gzip
+gsid: 011018245128163582803757700012540095629
+sc: 0.012
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,key,x-biz,x-info,platinfo,encr,enginever,gzipped,poiid
+url https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692 runs 0.873s...
+{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+发送请求完成！结果为：{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+请求结果中包含检查点["status":"1","info":"OK","infocode":"10000"]，autoit001用例验证通过
+开始执行骑行路线规划API autoit002 自动化测试用例
+开始get请求...
+头信息参数为空，无需设置头信息
+Request: 
+Get https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692
+Get Params: origin=116.269775,39.842980&destination=116.397477,39.908692&key=8030fe79bb330c8a627ddd1e513526a2
+Content-Type: application/x-www-form-urlencoded
+completed successful!
+Response:
+HTTP/1.1 200 OK
+Server: Tengine
+Date: Tue, 02 Nov 2021 04:40:38 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+gsid: 033015133019163582803894600012540364902
+Vary: Accept-Encoding
+Acc-Bill: 
+Content-Encoding: gzip
+gsid: 033015133019163582803894600012540364902
+sc: 0.012
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: *
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,key,x-biz,x-info,platinfo,encr,enginever,gzipped,poiid
+url https://restapi.amap.com/v5/direction/bicycling?key=8030fe79bb330c8a627ddd1e513526a2&origin=116.269775,39.842980&destination=116.397477,39.908692 runs 0.277s...
+{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+发送请求完成！结果为：{"status":"1","info":"OK","infocode":"10000","count":"1","route":{"origin":"116.269775,39.842980","destination":"116.397477,39.908692","paths":[{"distance":"19495","duration":"4679","steps":[{"instruction":"向东骑行25米右转","orientation":"东","road_name":"","step_distance":25},{"instruction":"沿建新路向南骑行668米左转","orientation":"南","road_name":"建新路","step_distance":668},{"instruction":"沿看丹路向东骑行129米右转","orientation":"东","road_name":"看丹路","step_distance":129},{"instruction":"沿看杨路向南骑行252米左转","orientation":"南","road_name":"看杨路","step_distance":252},{"instruction":"沿看丹南路辅路向东骑行760米直行","orientation":"东","road_name":"看丹南路辅路","step_distance":760},{"instruction":"沿富丰路向东骑行505米左转","orientation":"东","road_name":"富丰路","step_distance":505},{"instruction":"沿丰台北路辅路向北骑行4018米左转","orientation":"北","road_name":"丰台北路辅路","step_distance":4018},{"instruction":"沿万丰路向北骑行1392米右转","orientation":"北","road_name":"万丰路","step_distance":1392},{"instruction":"沿G4辅路向东北骑行1987米右转","orientation":"东北","road_name":"G4辅路","step_distance":1987},{"instruction":"沿广安路向东骑行982米左转","orientation":"东","road_name":"广安路","step_distance":982},{"instruction":"沿马连道北路向北骑行381米右转","orientation":"北","road_name":"马连道北路","step_distance":381},{"instruction":"沿广莲路向东骑行259米向左前方行驶","orientation":"东","road_name":"广莲路","step_distance":259},{"instruction":"沿南蜂窝路向北骑行387米右转","orientation":"北","road_name":"南蜂窝路","step_distance":387},{"instruction":"沿莲花池东路辅路向东骑行1132米左转","orientation":"东","road_name":"莲花池东路辅路","step_distance":1132},{"instruction":"沿白云路向北骑行1087米右转","orientation":"北","road_name":"白云路","step_distance":1087},{"instruction":"沿复兴门外大街向东骑行994米直行","orientation":"东","road_name":"复兴门外大街","step_distance":994},{"instruction":"沿复兴门内大街向东骑行401米","orientation":"东","road_name":"复兴门内大街","step_distance":401},{"instruction":"沿西长安街向东骑行3317米直行","orientation":"东","road_name":"西长安街","step_distance":3317},{"instruction":"沿东长安街向东骑行320米左转","orientation":"东","road_name":"东长安街","step_distance":320},{"instruction":"沿南池子大街向北骑行17米左转","orientation":"北","road_name":"南池子大街","step_distance":17},{"instruction":"沿东长安街向西骑行327米直行","orientation":"西","road_name":"东长安街","step_distance":327},{"instruction":"沿西长安街向西骑行155米到达目的地","orientation":"西","road_name":"西长安街","step_distance":155}]}]}}
+请求结果中包含检查点["status":"1","info":"OK","infocode":"10000"]，autoit002用例验证通过
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
+开始执行  自动化测试用例
+关键字方法 在映射表中找不到，请确认是否输入正确!
