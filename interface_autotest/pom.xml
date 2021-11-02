@@ -96,7 +96,12 @@
      <scope>test</scope>
   </dependency> 
   </dependencies>
-  
+  <dependency>
+  <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+  	<groupId>com.alibaba</groupId>
+     <artifactId>fastjso</artifactId>
+     <version>1.2.59</version>
+  </dependency>
   <build>
      <plugins>
      <!-- 添加插件 关联testNg.xml -->
